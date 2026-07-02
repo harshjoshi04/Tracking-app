@@ -8,6 +8,13 @@
       "when": 1782836682180,
       "tag": "0000_rare_proudstar",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1783015743217,
+      "tag": "0001_nosy_odin",
+      "breakpoints": true
     }
   ]
 }
