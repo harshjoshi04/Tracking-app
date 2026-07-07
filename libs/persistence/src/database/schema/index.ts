@@ -3,3 +3,7 @@ export * from './role.schema';
 export * from './delivery.schema';
 export * from './delivery-location-history.schema';
 export * from './delivery-status-history.schema';
+export * from './category.schema';
+export * from './product.schema';
+export * from './delivery-item.schema';
+export * from './auth-otp.schema';

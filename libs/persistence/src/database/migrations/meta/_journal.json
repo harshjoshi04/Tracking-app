@@ -15,6 +15,20 @@
       "when": 1783015743217,
       "tag": "0001_nosy_odin",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1783166394880,
+      "tag": "0002_long_vertigo",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1783359948610,
+      "tag": "0003_petite_ben_parker",
+      "breakpoints": true
     }
   ]
 }

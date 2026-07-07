@@ -4,6 +4,10 @@ package user;
 
 service UserService {
     rpc GetHello (Empty) returns (HelloResponse);
+    rpc RegisterCustomer (RegisterCustomerRequest) returns (RegisterResponse);
+    rpc RegisterDriver (RegisterDriverRequest) returns (RegisterResponse);
+    rpc RequestLoginOtp (RequestLoginOtpRequest) returns (RequestLoginOtpResponse);
+    rpc VerifyOtp (VerifyOtpRequest) returns (VerifyOtpResponse);
 }
 
 message Empty {}
@@ -11,4 +15,49 @@ message Empty {}
 
 message HelloResponse {
     string message = 1;
+}
+
+message RegisterCustomerRequest {
+    string name = 1;
+    string email = 2;
+    string mobile = 3;
+    string address = 4;
+}
+
+message RegisterDriverRequest {
+    string name = 1;
+    string email = 2;
+    string mobile = 3;
+    string address = 4;
+}
+
+message RegisterResponse {
+    bool success = 1;
+    string message = 2;
+    string userId = 3;
+}
+
+message RequestLoginOtpRequest {
+    string email = 1;
+    string mobile = 2;
+}
+
+message RequestLoginOtpResponse {
+    bool success = 1;
+    string message = 2;
+    string requestId = 3;
+}
+
+message VerifyOtpRequest {
+    string email = 1;
+    string mobile = 2;
+    string otp = 3;
+}
+
+message VerifyOtpResponse {
+    bool success = 1;
+    string message = 2;
+    string userId = 3;
+    string email = 4;
+    string token = 5;
 }

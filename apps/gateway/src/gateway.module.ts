@@ -5,6 +5,7 @@ import { GatewayService } from './gateway.service';
 import { DatabaseModule } from 'app/persistence';
 import { AppConfigModule } from 'libs/config';
 import { UsersModule } from './users/users.module';
+import { AuthModule } from './auth/auth.module';
 import { RedisModule } from 'libs/redis/src';
 import { QueueModule } from 'libs/queue/src';
 
@@ -15,6 +16,7 @@ import { QueueModule } from 'libs/queue/src';
     QueueModule,
     DatabaseModule,
     UsersModule,
+    AuthModule,
   ],
   controllers: [GatewayController],
   providers: [GatewayService],
